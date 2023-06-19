@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Teste WebSocket</title>
+    </head>
+    <body>
+        <h1>Teste WebSocket</h1>
+
+        <button onclick="sendPing()">Enviar Ping</button>
+        <button onclick="sendStatus()">Verificar Status</button>
+
+        <div id="message-log"></div>
+
+        <script>
+            const socket = new WebSocket("ws://192.168.1.11:8089");
+
+            const messageLog = document.getElementById("message-log");
+
+            const addMessageToLog = (message) => {
+                const messageElement = document.createElement("p");
+                messageElement.textContent = message;
+                messageLog.appendChild(messageElement);
+            };
+
+            const sendPing = () => {
+                socket.send("ping");
+            };
+
+            const sendStatus = () => {
+                socket.send("status");
+            };
+
+            socket.addEventListener("message", (event) => {
+                const message = event.data;
+                addMessageToLog(message);
+            });
+        </script>
+    </body>
+</html>

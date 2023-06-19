@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "jssip": "^3.10.0",
+    "webrtc-adapter": "^8.2.2",
+    "ws": "^8.13.0"
+  },
+  "name": "jssip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
