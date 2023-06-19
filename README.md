@@ -9,7 +9,7 @@ WebSocketUDP é um projeto que implementa uma interface para converter o protoco
 
 ## Requisitos
 
-- Node.js (vX.X.X): [link para download](https://nodejs.org)
+- Node.js (>=v18.0.0): [link para download](https://nodejs.org)
 
 ## Instalação
 
