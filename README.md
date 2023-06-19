@@ -1,6 +1,7 @@
 # WebSocketUDP
 
 WebSocketUDP é um projeto que implementa uma interface para converter o protocolo UDP para WebSocket em JavaScript.
+![image](https://github.com/gontijol/websocketUDP/assets/64325773/70c3d578-03f8-4c5f-bfd1-532bbafbd733)
 
 ## Funcionalidades
 
